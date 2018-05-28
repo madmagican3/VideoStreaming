@@ -41,6 +41,7 @@ p{
 }
 .navbar-scroll{
   flex-direction:row;
+  margin:auto auto;
   display:flex;
   list-style:none;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -64,4 +65,14 @@ p{
   margin-left:10px;
   margin-bottom:10px;
   margin-top: 10px;
+}
+.searchForm{
+  margin-left:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding:10px;
+}
+.searchIcon{
+  width:30px;
+  height:30px;
 }
