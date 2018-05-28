@@ -6,13 +6,10 @@ html
   body
     div(class="navbarDiv")
       nav(class="navbar")
-        a(class="brand")
+        a(class="brand" , href='/')
+          img(class="icon",src='HomeIcon.png' )
         div(class="list")
           ul(class="navbar-scroll")
-            li(class="row") Navbar Test
-            li(class="row") te
-            li(class="row") te
-            li(class="row") te
-            li(class="row") te
-            li(class="row") te
+            li(class="row")
+              a(class="navbarLink",href="/videostest" ) Videos
     block content

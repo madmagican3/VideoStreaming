@@ -1,6 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: darkgreen;
+  color: White;
   background: #282828;
   margin:0px;
 }
@@ -26,20 +26,42 @@ p{
   margin-left:0;
   top:0;
   border-width:.2rem;
+  box-sizing:border-box;
 }
 .navbar{
   flex-flow:row nowrap;
   justify-content:flex-start;
-  background-color:#563d7c;
+  background-color:#570480;
+  display:flex;
 }
 .list{
   display:flex;
   flex-basis:auto;
+  text-align:center;
 }
 .navbar-scroll{
   flex-direction:row;
   display:flex;
+  list-style:none;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: White;
 }
 .row{
   box-sizing:border-box;
+}
+.videoContainer{
+  background-color: black;
+  display:table;
+  width:100%;
+}
+.navbarLink{
+  color:#A9A9A9;
+  text-decoration:none;
+}
+.icon{
+ width:50px;
+  height:50px;
+  margin-left:10px;
+  margin-bottom:10px;
+  margin-top: 10px;
 }

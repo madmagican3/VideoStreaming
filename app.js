@@ -10,6 +10,7 @@ var Routes = require('./routes/Routes');
 var app = express();
 
 app.use(express.static('./Videos'));
+app.use(express.static('./Icons'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
