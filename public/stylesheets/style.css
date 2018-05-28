@@ -1,7 +1,45 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: darkgreen;
+  background: #282828;
+  margin:0px;
+}
+#videoPlayer{
+
 }
 
 a {
   color: #00B7FF;
+}
+p{
+  colour: green;
+}
+.videoPlayer {
+  max-height:70%;
+  max-width:100%;
+  margin: 0 auto;
+  display: block;
+}
+.navbarDiv {
+  position:relative;
+  margin-right:0;
+  margin-left:0;
+  top:0;
+  border-width:.2rem;
+}
+.navbar{
+  flex-flow:row nowrap;
+  justify-content:flex-start;
+  background-color:#563d7c;
+}
+.list{
+  display:flex;
+  flex-basis:auto;
+}
+.navbar-scroll{
+  flex-direction:row;
+  display:flex;
+}
+.row{
+  box-sizing:border-box;
 }
