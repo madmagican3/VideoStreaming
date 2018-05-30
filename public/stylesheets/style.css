@@ -58,6 +58,7 @@ p{
 .navbarLink{
   color:#A9A9A9;
   text-decoration:none;
+  font: 22px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 .icon{
  width:50px;
@@ -73,6 +74,14 @@ p{
   padding:10px;
 }
 .searchIcon{
-  width:30px;
+  background:url('/SearchIcon.png');
+  background-size:cover;
   height:30px;
+  width:30px;
+  border:none;
+}
+.searchBox{
+  height:30px;
+  padding:0px;
+  border:none;
 }
