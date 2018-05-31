@@ -7,12 +7,19 @@ html
     div(class="navbarDiv")
       nav(class="navbar")
         a(class="brand" , href='/')
-          img(class="icon",src='HomeIcon.png' )
+          img(class="icon",src='/Icons/HomeIcon.png' )
         div(class="list")
           ul(class="navbar-scroll")
             li(class="row")
               a(class="navbarLink",href="/videotest" ) Video
         form(class="searchForm")
           input(class="searchBox",type="text",placeholder="Search")
-          input(class="searchIcon",type="submit",src="SearchIcon.png", value="")
+          input(class="searchIcon",type="submit", value="")
     block content
+  footer
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js")
+    script(type="text/javascript" src="/javascripts/CookieNotice.js")
+    div(class="CookieNotice")
+      span(class="cookieInformation") This site uses cookies for logging in and getting rid of this message. Please read the privacy policy&nbsp
+        a(href="/privacyPolicy") here
+      a(class="acceptCookie", onclick="acceptCookies()") Ok
