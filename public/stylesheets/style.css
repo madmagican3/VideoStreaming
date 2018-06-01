@@ -4,9 +4,7 @@ body {
   background: #282828;
   margin:0px;
 }
-#videoPlayer{
 
-}
 
 a {
   color: #00B7FF;
@@ -15,10 +13,10 @@ p{
   colour: green;
 }
 .videoPlayer {
-  max-height:70%;
-  max-width:100%;
-  margin: 0 auto;
-  display: block;
+  height: 100%;
+  width:100%;
+  object-fit:contain;
+  vertical-align:top;
 }
 .navbarDiv {
   position:relative;
@@ -54,7 +52,7 @@ p{
   background-color: black;
   display:table;
   width:100%;
-  min-height:70%;
+  height:70vh;
 }
 .navbarLink{
   color:#A9A9A9;
@@ -109,4 +107,13 @@ p{
   text-decoration:none;
   background:linear-gradient(to bottom, #FEFEFE, #F4F4F4) repeat scroll 0 0 #F3F3F3;
   border-radius:3px 3px 3px 3px;
+}
+.votes{
+  float:right;
+}
+.titleAndUpvotes{
+  display:inline-block;
+  width:100%;
+  margin-top:20px;
+  margin-bottom:20px;
 }

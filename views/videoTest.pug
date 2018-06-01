@@ -2,7 +2,14 @@ extends layout
 
 
 block content
-    h1 Title
     div(class="videoContainer")
-        div(style="display:table-cell")
-            video(class='videoPlayer', controls, src='/Videos/Test.mp4', type='video/mp4')
+        div(style="display:table-cell;height:70vh")
+            //Remember to add autoplay back to this
+            video(class='videoPlayer', controls, src=video.location, type='video/mp4')
+    div(class="titleAndUpvotes")
+        h1(style="display:inline;") #{video.Title}
+        a(style="float:right;",class="upvote") #{video.upvotes} &nbsp
+        a(style="float: right;",class="downvote") #{video.devotes} &nbsp
+        h3(style="float: right;margin-top:0px;") Views #{video.views}&nbsp
+    p #{video.Description}
+    p #{video.tags}

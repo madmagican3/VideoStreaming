@@ -9,10 +9,17 @@ $(document).ready(function(){
         var elem = $('.CookieNotice');
         elem.slideToggle(500);
     }
-    window.onresize = function(a,b){
+    window.onresize = function(a){
+        var div = $('.videoContainer');
+        var doc =  $(document);
+        var actualHeight = doc.height() -74 - 33 -div.height() - 60;
+        console.log(actualHeight);
+        var vid = $('.videoPlayer');
+        console.log(vid.videoHeight);
+        console.log(vid.videoWidth);
         console.log("Resize");
-        console.log(a);
-        console.log(b);
+        // console.log(div.height());
+        // console.log(doc.height());
     }
 });
 function FindCookie(name) {
