@@ -7,9 +7,17 @@ block content
             //Remember to add autoplay back to this
             video(class='videoPlayer', controls, src=video.location, type='video/mp4')
     div(class="titleAndUpvotes")
+        script(type="text/javascript" src="/javascripts/VideoModification.js")
         h1(style="display:inline;") #{video.Title}
-        a(style="float:right;",class="upvote") #{video.upvotes} &nbsp
-        a(style="float: right;",class="downvote") #{video.devotes} &nbsp
-        h3(style="float: right;margin-top:0px;") Views #{video.views}&nbsp
+        a(style="text-direction:none;color:white;float: right;padding-left:3px; padding-right:5px;",class="downvote") #{video.devotes}
+        img(class="iconDown", src='/Icons/Down.png', onClick="downVote()" )
+        a(style="text-decoration:none;color:white;float:right; padding-left:3px; padding-right:5px;",class="upvote") #{video.upvotes}
+        img(class="iconUp", src='/Icons/Up.png', onClick="upVote()" )
+        h3(style="float: right;margin-top:0px;padding-right:30px;") Views #{video.views}&nbsp
     p #{video.Description}
-    p #{video.tags}
+    div(tags)
+        p(style="display:inline;") Tags :&nbsp
+        each val,index in video.tags
+            a(class="tag")=val
+            if(index != video.tags.length -1)
+                p(style="display:inline") ,
