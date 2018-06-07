@@ -9,7 +9,7 @@
  * @param de The number of downvotes
  * @constructor This defines the video
  */
-function Video(title, desc, loc,tags,views,up,de){
+function Video(title, desc, loc,tags,views,up,de, thumbnail){
     this.Title = title;
     this.Description = desc;
     this.location = loc;
@@ -17,5 +17,6 @@ function Video(title, desc, loc,tags,views,up,de){
     this.views = views;
     this.upvotes = up;
     this.devotes = de;
+    this.thumbnail = thumbnail;
 }
 module.exports = Video;

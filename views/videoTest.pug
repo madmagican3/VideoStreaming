@@ -5,7 +5,7 @@ block content
     div(class="videoContainer")
         div(style="display:table-cell;height:70vh")
             //Remember to add autoplay back to this
-            video(class='videoPlayer', controls, src=video.location, type='video/mp4')
+            video(class='videoPlayer', controls controlsList="nodownload", src=video.location, type='video/mp4')
     div(class="titleAndUpvotes")
         script(type="text/javascript" src="/javascripts/VideoModification.js")
         h1(style="display:inline;") #{video.Title}

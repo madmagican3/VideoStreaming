@@ -71,6 +71,7 @@ p{
   margin-top:auto;
   margin-bottom:auto;
   padding:10px;
+  display:inline-flex;
 }
 .searchIcon{
   background:url('/Icons/SearchIcon.png');
