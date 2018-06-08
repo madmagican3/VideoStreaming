@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    each sVideo  in video
+        div(class="container" , onclick="select()")
+            image(class="thumbnail" , src=sVideo.thumbnail)
+            h2 #{sVideo.Title}
+            p #{sVideo.Description}
+            h4 Views #{sVideo.views}
+            span(class="divider")
+
+
+

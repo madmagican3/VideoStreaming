@@ -67,11 +67,12 @@ p{
   margin-top: 10px;
 }
 .searchForm{
-  margin-left:auto;
+  margin-left:25%;
   margin-top:auto;
   margin-bottom:auto;
   padding:10px;
   display:inline-flex;
+  width:30%;
 }
 .searchIcon{
   background:url('/Icons/SearchIcon.png');
@@ -84,6 +85,7 @@ p{
   height:30px;
   padding:0px;
   border:none;
+  width: 90%;
 }
 .CookieNotice{
   background-color:#000000;
@@ -133,4 +135,25 @@ p{
   float:right;
   border-radius:50%;
   background-color:#282828;
+}
+.thumbnail{
+  width:210px;
+  height:110px;
+  object-fit: contain;
+  background-color:black;
+  float:left;
+  margin-right:20px;
+}
+.container{
+  height:130px;
+  margin-left:10px;
+  margin-bottom:10px;
+  align-content:center;
+  position:relative;
+}
+.divider{
+  width:99%;
+  border-bottom:1px solid black;
+  bottom:0;
+  position:absolute;
 }

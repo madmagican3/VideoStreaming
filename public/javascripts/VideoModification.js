@@ -16,6 +16,7 @@ function downVote(){
 }
 function voteChange(elem, elemToMod, elemOpp, elemToModOpp, force){
     console.log("NEED TO GET THE POST REQUESTS WORKING FOR UPVOTE& DOWNVOTE");
+    //TODO
     if (rgb2hex(elem.css("background-color")) == "#a9a9a9"){
         var num = elemToMod.text();
         num = Number(num) -1;
